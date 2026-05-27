@@ -1,0 +1,150 @@
+.testimonial-feature {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: #fbf8f3;
+}
+
+.testimonial-feature > img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+.testimonial-feature > div {
+  width: min(100%, 390px);
+  margin: 0 auto;
+  padding: 42px;
+}
+
+.quote-mark {
+  display: block;
+  color: #b99d70;
+  font-family: Georgia, serif;
+  font-size: 36px;
+  line-height: 1;
+}
+
+.testimonial-feature blockquote {
+  margin: 0;
+  color: #211c19;
+  font-family: Georgia, serif;
+  font-size: 19px;
+  line-height: 1.5;
+}
+
+.testimonial-feature blockquote em {
+  display: block;
+  margin-top: 10px;
+  color: #c98691;
+  font-size: 21px;
+  font-style: italic;
+}
+
+.testimonial-name {
+  margin-top: 30px;
+  color: #211c19;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.testimonial-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding: 21px 60px;
+  background: #fbf8f3;
+}
+
+.testimonial-cards article {
+  min-height: 318px;
+  border: 1px solid #eee4d8;
+  padding: 13px 38px 24px;
+  text-align: center;
+}
+
+.testimonial-cards img {
+  width: 88px;
+  height: 88px;
+  margin: 0 auto 14px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.testimonial-cards p {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 14px;
+  line-height: 1.48;
+}
+
+.testimonial-cards h3 {
+  margin: 0 0 5px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+.small-divider {
+  display: block;
+  width: 28px;
+  height: 1px;
+  margin: 17px auto;
+  background: #d6c3a1;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 13px;
+  color: #b99d70;
+}
+
+.stars svg {
+  width: 13px;
+  height: 13px;
+  fill: currentColor;
+}
+
+.testimonial-cta {
+  position: relative;
+  display: grid;
+  grid-template-columns: 250px 1fr 330px 140px;
+  align-items: center;
+  min-height: 164px;
+  overflow: hidden;
+  background: #fbf8f3;
+  padding: 0 42px;
+}
+
+.testimonial-cta > img:first-child {
+  width: 120px;
+  justify-self: center;
+}
+
+.testimonial-cta > img:last-child {
+  width: 150px;
+  justify-self: end;
+}
+
+.testimonial-cta div {
+  text-align: center;
+}
+
+.testimonial-cta address {
+  display: grid;
+  gap: 16px;
+  border-left: 1px solid #e5dacd;
+  padding-left: 42px;
+  font-style: normal;
+  font-family: Georgia, serif;
+  font-size: 13px;
+}
+
+.testimonial-cta address span {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}

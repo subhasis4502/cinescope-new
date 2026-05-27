@@ -1,0 +1,260 @@
+.demo-hero {
+  position: relative;
+  height: 502px;
+  margin-top: 66px;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 74% 48%, rgba(210, 180, 145, 0.26), transparent 22%),
+    linear-gradient(90deg, #fbf7f1 0%, #fbf7f1 41%, #f8eee7 62%, #fff5f0 100%);
+}
+
+.demo-hero-copy {
+  position: absolute;
+  top: 72px;
+  left: calc(50% - 285px);
+  z-index: 3;
+  width: 290px;
+  text-align: center;
+}
+
+.demo-hero h1,
+.featured-section h2,
+.film-section h2,
+.experience-section h2,
+.instagram-section h2 {
+  margin: 0;
+  color: #211c19;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: 0;
+}
+
+.demo-hero h1 span {
+  display: block;
+  font-size: 46px;
+  letter-spacing: 6px;
+}
+
+.demo-hero h1 em {
+  display: block;
+  margin: -6px 0 -3px;
+  color: #d9a0a2;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 55px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.hero-text {
+  width: 265px;
+  margin: 19px auto 22px;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.hero-bride {
+  position: absolute;
+  top: 0;
+  right: calc(50% - 432px);
+  z-index: 2;
+  width: 408px;
+  height: 436px;
+  object-fit: cover;
+}
+
+.hero-couple {
+  position: absolute;
+  bottom: 15px;
+  left: calc(50% - 445px);
+  z-index: 4;
+  width: 132px;
+  height: 145px;
+  object-fit: cover;
+}
+
+.hero-floral {
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.hero-floral-left {
+  left: calc(50% - 512px);
+  width: 224px;
+}
+
+.hero-floral-right {
+  right: calc(50% - 512px);
+  width: 201px;
+}
+
+.section-inner {
+  width: min(100%, 1024px);
+  margin: 0 auto;
+  padding: 0 106px;
+}
+
+.featured-section {
+  padding: 49px 0 53px;
+  background: #f7eddf;
+}
+
+.featured-grid,
+.film-grid {
+  display: grid;
+  grid-template-columns: 210px 1fr;
+  gap: 30px;
+}
+
+.feature-intro {
+  padding-top: 20px;
+}
+
+.feature-intro h2,
+.film-copy h2 {
+  font-size: 28px;
+  line-height: 1.18;
+}
+
+.story-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.story-card {
+  text-align: center;
+}
+
+.story-card img {
+  width: 181px;
+  height: 160px;
+  object-fit: cover;
+}
+
+.story-card h3 {
+  margin: 18px 0 3px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+}
+
+.story-card p {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  color: #4f453f;
+}
+
+.film-section {
+  padding: 39px 0 35px;
+  background: #f6e8e4;
+}
+
+.film-copy p:not(.eyebrow) {
+  width: 166px;
+  margin: 16px 0 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.film-frame {
+  position: relative;
+}
+
+.film-frame img {
+  width: 572px;
+  height: 184px;
+  object-fit: cover;
+}
+
+.film-frame button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 59px;
+  height: 59px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: rgba(36, 23, 19, 0.52);
+  color: #fff;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.experience-section {
+  padding: 36px 74px 40px;
+  background: #fbf8f4;
+  text-align: center;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: min(100%, 880px);
+  margin: 29px auto 0;
+}
+
+.service-item {
+  min-height: 112px;
+  padding: 0 21px;
+  border-left: 1px solid #d8d0c4;
+}
+
+.service-item:first-child {
+  border-left: 0;
+}
+
+.service-item svg {
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 17px;
+  color: #b7aa8d;
+  stroke-width: 1.4;
+}
+
+.service-item h3 {
+  margin: 0 0 10px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.service-item p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.instagram-section {
+  position: relative;
+  padding: 22px 0 28px;
+  background: #fffdfb;
+  text-align: center;
+}
+
+.frame-slider {
+  position: relative;
+  width: min(100%, 1024px);
+  margin: 26px auto 0;
+  padding: 0 80px;
+}
+
+.frame-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+
+.frame-row img {
+  width: 117px;
+  height: 113px;
+  object-fit: cover;
+}
