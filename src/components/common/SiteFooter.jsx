@@ -11,7 +11,7 @@ const SiteFooter = ({ onNavigate }) => (
         <a href="/" onClick={(event) => handleInternalClick(event, onNavigate)}>HOME</a>
         <a href="/about" onClick={(event) => handleInternalClick(event, onNavigate)}>ABOUT</a>
         <a href="/stories" onClick={(event) => handleInternalClick(event, onNavigate)}>STORIES</a>
-        <a href="/#films" onClick={(event) => handleInternalClick(event, onNavigate)}>FILMS</a>
+        <a href="/films" onClick={(event) => handleInternalClick(event, onNavigate)}>FILMS</a>
         <a href="/philosophy" onClick={(event) => handleInternalClick(event, onNavigate)}>PHILOSOPHY</a>
         <a href="/testimonials" onClick={(event) => handleInternalClick(event, onNavigate)}>TESTIMONIALS</a>
         <a href="/#experience" onClick={(event) => handleInternalClick(event, onNavigate)}>EXPERIENCE</a>

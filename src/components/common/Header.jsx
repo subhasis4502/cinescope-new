@@ -7,7 +7,7 @@ const Header = ({ activeNav = 'HOME', onNavigate }) => {
     ['HOME', '/'],
     ['ABOUT', '/about'],
     ['STORIES', '/stories'],
-    ['FILMS', '/#films'],
+    ['FILMS', '/films'],
     ['PHILOSOPHY', '/philosophy'],
     ['TESTIMONIALS', '/testimonials'],
     ['EXPERIENCE', '/#experience'],

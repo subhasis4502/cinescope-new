@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import AboutPage from './pages/About'
+import FilmsPage from './pages/Films'
 import HomePage from './pages/Home'
 import PhilosophyPage from './pages/Philosophy'
 import StoriesPage from './pages/Stories'
@@ -50,6 +51,10 @@ function App() {
 
   if (route === '/about') {
     return <AboutPage activeNav={activeNav} onNavigate={navigate} />
+  }
+
+  if (route === '/films') {
+    return <FilmsPage activeNav={activeNav} onNavigate={navigate} />
   }
 
   if (route === '/philosophy') {
