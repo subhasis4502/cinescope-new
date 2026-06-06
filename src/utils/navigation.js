@@ -4,6 +4,7 @@ export const getActiveNav = () => getActiveNavFromPath(window.location.pathname,
 
 export const getActiveNavFromPath = (pathname, hash) => {
   if (pathname.startsWith('/stories')) return 'STORIES'
+  if (pathname === '/about') return 'ABOUT'
   if (pathname === '/philosophy') return 'PHILOSOPHY'
   if (pathname === '/testimonials') return 'TESTIMONIALS'
 

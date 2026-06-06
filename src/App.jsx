@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import AboutPage from './pages/About'
 import HomePage from './pages/Home'
 import PhilosophyPage from './pages/Philosophy'
 import StoriesPage from './pages/Stories'
@@ -45,6 +46,10 @@ function App() {
   if (route.startsWith('/stories/')) {
     const slug = route.split('/').filter(Boolean).at(-1)
     return <StoryDetailPage story={getStoryBySlug(slug)} activeNav={activeNav} onNavigate={navigate} />
+  }
+
+  if (route === '/about') {
+    return <AboutPage activeNav={activeNav} onNavigate={navigate} />
   }
 
   if (route === '/philosophy') {

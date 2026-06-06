@@ -1,0 +1,246 @@
+.about-page {
+  background: #fbf6ef;
+}
+
+.about-approach {
+  position: relative;
+  margin-top: 66px;
+  padding: 34px 88px 28px;
+  overflow: hidden;
+  background: #fbf6ef;
+  text-align: center;
+}
+
+.about-approach h1,
+.team-section h2,
+.featured-logos h2,
+.about-cta h2 {
+  margin: 0;
+  color: #3a1c1d;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.18;
+}
+
+.about-approach .chapter-rule,
+.team-section .chapter-rule {
+  margin: 12px auto 18px;
+}
+
+.about-intro {
+  width: min(100%, 410px);
+  margin: 0 auto 30px;
+  font-family: Georgia, serif;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.about-decor {
+  position: absolute;
+  top: 104px;
+  width: 104px;
+  pointer-events: none;
+}
+
+.about-decor-left {
+  left: 0;
+}
+
+.about-decor-right {
+  right: 0;
+}
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: min(100%, 590px);
+  margin: 0 auto;
+}
+
+.approach-grid article {
+  min-height: 115px;
+  padding: 0 21px 18px;
+  border: 1px solid #f0e6dd;
+  border-left: 0;
+  background: rgba(255, 252, 248, 0.35);
+}
+
+.approach-grid article:first-child {
+  border-left: 1px solid #f0e6dd;
+}
+
+.approach-grid span {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin: -24px auto 18px;
+  border-radius: 50%;
+  background: #efe4d8;
+  color: #745c4a;
+}
+
+.approach-grid svg {
+  width: 24px;
+  height: 24px;
+}
+
+.approach-grid h2 {
+  margin: 0 0 10px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.approach-grid p {
+  margin: 0;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.team-section {
+  position: relative;
+  padding: 28px 88px 40px;
+  background: #fbf6ef;
+  text-align: center;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  width: min(100%, 620px);
+  margin: 0 auto;
+}
+
+.team-grid img {
+  width: 100%;
+  height: 114px;
+  border-radius: 3px;
+  object-fit: cover;
+}
+
+.team-grid h3 {
+  margin: 15px 0 7px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+}
+
+.team-grid p {
+  margin: 0 auto 10px;
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.team-arrow {
+  position: absolute;
+  top: 132px;
+  display: grid;
+  place-items: center;
+  width: 31px;
+  height: 31px;
+  border: 1px solid #e5dacf;
+  border-radius: 50%;
+  background: transparent;
+  color: #b2a193;
+}
+
+.team-arrow-left {
+  left: 36px;
+}
+
+.team-arrow-right {
+  right: 48px;
+}
+
+.featured-logos {
+  padding: 28px 74px 38px;
+  background: #fbf6ef;
+  text-align: center;
+}
+
+.featured-logos div {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  gap: 40px;
+  width: min(100%, 650px);
+  margin: 34px auto 0;
+}
+
+.featured-logos span {
+  color: #232020;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.about-cta {
+  display: grid;
+  align-items: center;
+  min-height: 130px;
+  padding: 24px 106px;
+  background: linear-gradient(90deg, rgba(86, 19, 24, 0.96), rgba(86, 19, 24, 0.78)), url('/images/about/cta-bg.jpg') center / cover;
+  color: #fff;
+}
+
+.about-cta h2 {
+  color: #fff;
+}
+
+.about-cta p {
+  margin: 13px 0 20px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.about-cta .solid-link {
+  min-width: 106px;
+  height: 33px;
+  background: rgba(76, 20, 25, 0.78);
+  font-size: 9px;
+}
+
+@media (max-width: 900px) {
+  .about-approach,
+  .team-section,
+  .featured-logos {
+    padding-right: 22px;
+    padding-left: 22px;
+  }
+
+  .approach-grid,
+  .team-grid,
+  .featured-logos div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-arrow {
+    display: none;
+  }
+
+  .about-cta {
+    padding: 32px 22px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-approach {
+    margin-top: 64px;
+  }
+
+  .approach-grid,
+  .team-grid,
+  .featured-logos div {
+    grid-template-columns: 1fr;
+  }
+
+  .about-decor {
+    opacity: 0.35;
+  }
+}

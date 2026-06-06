@@ -5,7 +5,7 @@ const Header = ({ activeNav = 'HOME', onNavigate }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const navItems = [
     ['HOME', '/'],
-    ['ABOUT', '/#about'],
+    ['ABOUT', '/about'],
     ['STORIES', '/stories'],
     ['FILMS', '/#films'],
     ['PHILOSOPHY', '/philosophy'],
