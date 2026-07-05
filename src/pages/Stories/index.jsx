@@ -44,7 +44,7 @@ const StoriesPage = ({ activeNav, onNavigate }) => (
         <div>
           <p className="mini-label">READY TO CREATE YOUR STORY?</p>
           <h2>Let's capture your beautiful journey.</h2>
-          <a href="/#contact" className="solid-link" onClick={(event) => handleInternalClick(event, onNavigate)}>INQUIRE NOW</a>
+          <a href="/contact" className="solid-link" onClick={(event) => handleInternalClick(event, onNavigate)}>INQUIRE NOW</a>
         </div>
         <img className="stories-cta-leaf" src="/images/stories/footer-leaf-pillar.jpg" alt="" />
       </section>

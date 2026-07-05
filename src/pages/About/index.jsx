@@ -77,7 +77,7 @@ const AboutPage = ({ activeNav, onNavigate }) => {
           <div>
             <h2>Let's Create Something Beautiful Together</h2>
             <p>We would love to hear your story and be a part of your journey.</p>
-            <a href="/#contact" className="solid-link" onClick={(event) => handleInternalClick(event, onNavigate)}>GET IN TOUCH</a>
+            <a href="/contact" className="solid-link" onClick={(event) => handleInternalClick(event, onNavigate)}>GET IN TOUCH</a>
           </div>
         </section>
       </main>

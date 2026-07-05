@@ -66,7 +66,7 @@ const TestimonialsPage = ({ activeNav, onNavigate }) => {
           <div>
             <h2>Ready to create your story?</h2>
             <p>We'd love to hear all about it.</p>
-            <a href="/#contact" className="solid-link" onClick={(event) => handleInternalClick(event, onNavigate)}>INQUIRE NOW</a>
+            <a href="/contact" className="solid-link" onClick={(event) => handleInternalClick(event, onNavigate)}>INQUIRE NOW</a>
           </div>
           <address>
             <span><FiMail />hello@cinescope.studio</span>

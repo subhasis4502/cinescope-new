@@ -113,7 +113,7 @@ const FilmsPage = ({ activeNav, onNavigate }) => {
 
         <section className="films-cta">
           <h2>Let us turn your moments into a timeless film.</h2>
-          <a href="/#contact" className="outline-light-link" onClick={(event) => handleInternalClick(event, onNavigate)}>LET'S CREATE YOUR STORY <span></span></a>
+          <a href="/contact" className="outline-light-link" onClick={(event) => handleInternalClick(event, onNavigate)}>LET'S CREATE YOUR STORY <span></span></a>
         </section>
       </main>
       <SiteFooter onNavigate={onNavigate} />

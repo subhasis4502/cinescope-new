@@ -92,5 +92,5 @@ export const NAVIGATION_MENU = [
   { label: 'FILMS', href: '#films' },
   { label: 'EXPERIENCE', href: '#experience' },
   { label: 'JOURNAL', href: '#journal' },
-  { label: 'CONTACT', href: '#contact' },
+  { label: 'CONTACT', href: '/contact' },
 ];

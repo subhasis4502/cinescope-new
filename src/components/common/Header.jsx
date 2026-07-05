@@ -12,7 +12,7 @@ const Header = ({ activeNav = 'HOME', onNavigate }) => {
     ['TESTIMONIALS', '/testimonials'],
     ['EXPERIENCE', '/#experience'],
     ['JOURNAL', '/#journal'],
-    ['CONTACT', '/#contact'],
+    ['CONTACT', '/contact'],
   ]
   const handleClick = (event) => {
     event.preventDefault()

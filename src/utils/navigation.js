@@ -8,6 +8,7 @@ export const getActiveNavFromPath = (pathname, hash) => {
   if (pathname === '/films') return 'FILMS'
   if (pathname === '/philosophy') return 'PHILOSOPHY'
   if (pathname === '/testimonials') return 'TESTIMONIALS'
+  if (pathname === '/contact') return 'CONTACT'
 
   const sectionMap = {
     '#about': 'ABOUT',

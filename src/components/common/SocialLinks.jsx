@@ -1,43 +1,32 @@
-import React from 'react'
-import {
-  FiInstagram,
-  FiFacebook,
-  FiYoutube,
-  FiPieChart,
-} from 'react-icons/fi'
-import { COLORS, SOCIAL_LINKS } from '../../config/theme'
+import { FiInstagram, FiFacebook, FiYoutube } from "react-icons/fi";
+
+import { FaVimeoV } from "react-icons/fa";
 
 const SocialLinks = () => {
-  const iconMap = {
-    FiInstagram,
-    FiFacebook,
-    FiYoutube,
-    FiPieChart,
-  }
-
   return (
-    <div className="flex items-center gap-4">
-      {SOCIAL_LINKS.map((social) => {
-        const IconComponent = iconMap[social.icon]
-        return (
-          <a
-            key={social.name}
-            href={social.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="transition-transform hover:scale-110"
-            aria-label={social.name}
-            title={social.name}
-          >
-            <IconComponent
-              size={18}
-              style={{ color: COLORS.primary }}
-            />
-          </a>
-        )
-      })}
-    </div>
-  )
-}
+    <div className="flex justify-center gap-8">
+      <a
+        href="#"
+        className="text-3xl text-[#B89663] transition-all duration-300 hover:scale-110 hover:text-[#A8844B]"
+      >
+        <FiInstagram />
+      </a>
 
-export default SocialLinks
+      <a
+        href="#"
+        className="text-3xl text-[#B89663] transition-all duration-300 hover:scale-110 hover:text-[#A8844B]"
+      >
+        <FiYoutube />
+      </a>
+
+      <a
+        href="#"
+        className="text-3xl text-[#B89663] transition-all duration-300 hover:scale-110 hover:text-[#A8844B]"
+      >
+        <FiFacebook />
+      </a>
+    </div>
+  );
+};
+
+export default SocialLinks;
